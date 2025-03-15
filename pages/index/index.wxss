@@ -1,0 +1,112 @@
+/**index.wxss**/
+.tips{
+        /* 背景色 */
+        background-color: #f5eedf;
+        /* 字体颜色 */
+        color: rgb(0, 0, 0);
+        /* 字体大小 */
+        font-size: 32rpx;
+
+        /* 圆角效果 */
+        border-radius: 20rpx;
+
+        /* 距离上下左右的距离 */
+        margin: 30rpx 10rpx 30rpx 10rpx;
+
+        /* 内边距 */
+        padding-left: 20rpx;
+        
+}
+
+/* 通知公告样式 */
+.notice-container {
+        display: flex;  /* 启用Flex布局 */
+        align-items: center;  /* 垂直居中对齐 */
+        background-color: #ffffff;  /* 背景色 */
+        padding: 20rpx;  /* 内边距 */
+        margin: 20rpx 10rpx;  /* 外边距 */
+        border-radius: 10rpx;  /* 圆角 */
+        box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);  /* 阴影效果 */
+}
+
+.notice-icon {
+        width: 80rpx;  /* 图标宽度 */
+        height: 80rpx;  /* 图标高度 */
+        margin-right: 20rpx;  /* 右侧外边距，与文本保持距离 */
+        flex-shrink: 0;  /* 防止图标被压缩 */
+}
+
+.notice-content {
+        flex: 1;  /* 占据剩余空间 */
+        font-size: 28rpx;  /* 字体大小 */
+        color: #333333;  /* 字体颜色 */
+        line-height: 1.5;  /* 行高 */
+}
+
+.icon{
+        padding-right: 10rpx;
+}
+
+.text-left{
+        padding-left: 20rpx;
+        color: red;
+}
+
+
+.menu{
+        display: flex;   /* 启用Flex布局 */
+        justify-content: space-between;  /* 项目在主轴上均匀分布，两端对齐 */
+        padding: 16rpx;  /* 内边距 */
+        border-radius: 10rpx;  /* 圆角 */
+        flex-wrap: wrap;  /* 换行 */
+}
+
+.menu-item{
+        display: flex;  /* 启用Flex布局 */      
+        flex-direction: column;  /* 垂直排列 */
+        align-items: center;  /* 水平居中 */
+        justify-content: center;  /* 垂直居中 */
+        width: 150rpx;  /* 宽度 */
+        height: 200rpx;  /* 高度 */
+        border: rgb(192, 242, 255) solid 1rpx;  /* 边框 */
+}
+
+.menu-icon{
+        width: 88rpx;  /* 宽度 */
+        height: 88rpx;  /* 高度 */
+        border-radius: 10rpx;  /* 圆角 */
+}
+
+.title{
+        font-size: 28rpx;  /* 字体大小 */
+        color: rgb(0, 0, 0);  /* 字体颜色 */
+}
+
+/* 建筑四宫格布局样式 */
+.architecture-title {
+        font-size: 32rpx;  /* 标题字体大小 */
+        font-weight: bold;  /* 加粗 */
+        color: #333333;  /* 字体颜色 */
+        margin: 30rpx 20rpx 20rpx;  /* 外边距 */
+        text-align: center;  /* 居中对齐 */
+}
+
+.architecture-container {
+        display: flex;  /* 启用Flex布局 */
+        flex-wrap: wrap;  /* 允许换行 */
+        padding: 10rpx;  /* 内边距 */
+        margin: 0 10rpx 30rpx;  /* 外边距 */
+}
+
+.architecture-item {
+        width: 50%;  /* 宽度为容器的一半，形成2x2网格 */
+        padding: 10rpx;  /* 内边距，创建间隔 */
+        box-sizing: border-box;  /* 确保padding不会增加元素总宽度 */
+}
+
+.architecture-image {
+        width: 100%;  /* 图片宽度占满容器 */
+        height: 300rpx;  /* 固定高度 */
+        border-radius: 8rpx;  /* 圆角 */
+        box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.2);  /* 阴影效果 */
+}

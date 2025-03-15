@@ -1,0 +1,43 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+  <text class="title">==========事件绑定操作==========</text>
+  <button bindtap="handleButtonClick" class="custom-button" hover-class="button-hover">点击控制台打印</button>
+</view>
+
+<view class="container2">
+  <text class="title2">==========事件冒泡==========</text>
+
+  <view class="box" bindtap="handleBoxTap">
+    <button class="inner-box" bindtap="handleInnerBoxTap">点击试试冒泡</button>
+    
+    <button class="inner-box2" catchtap="handleInnerBoxTap2">点击阻止冒泡</button>
+  </view>
+</view>
+
+<view class="container3">
+  <text class="title3">========事件对象与传参========</text>
+  <button class="inner-box3" bindtap="handleInnerBoxTap3" 
+  data-param="传入的参数01" data-id="123" data-name="张三">点击试试事件对象与传参</button>
+</view>
+
+<!-- 组件跳转（声明式导航） -->
+<navigator url="/pages/navigate/navigate">跳转页面</navigator>
+
+<!-- 组件跳转（编程式导航） -->
+<navigator url="/pages/navigate/navigate" open-type="navigateTo">跳转页面</navigator>
+
+<!-- 组件跳转（重定向） -->
+<navigator url="/pages/navigate/navigate" open-type="redirectTo">跳转页面</navigator>
+
+<!-- 组件跳转（返回） -->
+<navigator url="/pages/navigate/navigate" open-type="navigateBack">返回页面</navigator>
+
+<!-- 组件跳转（关闭） -->
+<navigator url="/pages/navigate/navigate" open-type="switchTab">关闭页面</navigator>
+
+<!-- 组件跳转（重新加载） -->
+<navigator url="/pages/navigate/navigate" open-type="reLaunch">重新加载页面</navigator>
+
+<!-- 组件跳转（tabBar） -->
+<navigator url="/pages/navigate/navigate" open-type="switchTab">跳转tabBar页面</navigator>
+

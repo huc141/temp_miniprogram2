@@ -1,0 +1,84 @@
+<!--index.wxml-->
+<navigation-bar title="Weixin" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="tips">
+    <text class="iconfont icon-tishi3 icon"></text>
+    <text>欢迎使用我们的系统~</text>
+  </view>
+  
+  <!-- 通知公告布局 -->
+  <view class="notice-container">
+    <image src="/images/notice/notice.png" class="notice-icon"></image>
+    <view class="notice-content">公告内容</view>
+  </view>
+</scroll-view>
+
+
+<!-- <view class="tips">
+    <text class="iconfont icon-tishi3"></text>
+    <text class="text-left">欢迎使用我们的系统~</text>
+  </view> -->
+
+<view class='menu'>
+  <view class="menu-item">
+    <image src="/images/menu/bijiben.png" class="menu-icon"/>
+    <text title='title'>笔记本</text>
+  </view>
+  
+  <view class="menu-item">
+    <image src="/images/menu/chugui.png" class="menu-icon"/>
+    <text title='title'>橱柜</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/chuifengji.png" class="menu-icon"/>
+    <text title='title'>吹风机</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/dianbingxiang.png" class="menu-icon"/>
+    <text title='title'>电冰箱</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/dianshiji.png" class="menu-icon"/>
+    <text title='title'>电视机</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/duntangguo.png" class="menu-icon"/>
+    <text title='title'>炖汤锅</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/kongtiao.png" class="menu-icon"/>
+    <text title='title'>空调</text>
+  </view>
+
+  <view class="menu-item">
+    <image src="/images/menu/xiyiji.png" class="menu-icon"/>
+    <text title='title'>洗衣机</text>
+  </view>
+</view>
+
+<!-- 建筑四宫格布局 -->
+<view class="architecture-title" style="text-align: left;">建筑展示</view>
+<view class="architecture-container">
+  <view class="architecture-item">
+    <image src="/images/architecture/建筑01.png" class="architecture-image" mode="aspectFill"></image>
+  </view>
+
+  <view class="architecture-item">
+    <image src="/images/architecture/建筑02.png" class="architecture-image" mode="aspectFill"></image>
+  </view>
+
+  <view class="architecture-item">
+    <image src="/images/architecture/建筑03.png" class="architecture-image" mode="aspectFill"></image>
+  </view>
+
+  <view class="architecture-item">
+    <image src="/images/architecture/建筑04.png" class="architecture-image" mode="aspectFill"></image>
+  </view>
+</view>
+  
