@@ -127,3 +127,56 @@
   border: none;
   box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.15); /* 增强阴影效果 */
 }
+
+.container4 {
+  margin-top: 120rpx; /* 整体容器与屏幕顶部的距离 */
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  align-items: center; /* 水平居中 */
+}
+
+.title4 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.inner-box4 {
+  width: 80%; /* 修改为相对宽度，不占满整行 */
+  height: 80rpx;
+  background-color: hsl(130, 75%, 88%);
+  border-radius: 10rpx; /* 增加圆角 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 重置button默认样式 */
+  margin: 0 auto; /* 水平居中 */
+  padding: 0;
+  line-height: normal;
+  font-size: 26rpx;
+  color: #333;
+  border: none;
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.15); /* 增强阴影效果 */
+}
+
+/* 编程式导航按钮样式 */
+.container4 button {
+  width: 80%;
+  height: 80rpx;
+  margin: 20rpx auto;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  box-shadow: 0 4rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 添加navigator样式 */
+navigator {
+  display: block; /* 使navigator占据整行 */
+  width: 100%; /* 宽度占满整行 */
+  margin: 20rpx 0; /* 添加上下外边距，使各个navigator之间有间隔 */
+  text-align: center; /* 文本居中 */
+}
+

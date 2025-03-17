@@ -20,24 +20,49 @@
   data-param="传入的参数01" data-id="123" data-name="张三">点击试试事件对象与传参</button>
 </view>
 
-<!-- 组件跳转（声明式导航） -->
-<navigator url="/pages/navigate/navigate">跳转页面</navigator>
+<view class="container4">
+  <text class="title4">==========页面跳转==========</text>
+</view>
+  
+<!-- 组件跳转（声明式导航）最基本的页面跳转 , 保留当前页面，跳转到应用内的某个页面，不能跳转tabbar页面-->
+<navigator url="/pages/navigate/navigate" hover-class="none">
+  <button class="inner-box4" type="primary" plain>最基本的页面跳转</button>
+</navigator>
 
-<!-- 组件跳转（编程式导航） -->
-<navigator url="/pages/navigate/navigate" open-type="navigateTo">跳转页面</navigator>
+<navigator url="/pages/navigate/navigate" hover-class="none" open-type="navigate">
+  <button class="inner-box4" type="primary" plain>navigate导航跳转页面</button>
+</navigator>
 
-<!-- 组件跳转（重定向） -->
-<navigator url="/pages/navigate/navigate" open-type="redirectTo">跳转页面</navigator>
+<!-- 组件跳转（重定向） 关闭当前页面，跳转到应用内的某个页面，不能跳转tabbar页面-->
+<navigator url="/pages/navigate/navigate" hover-class="none" open-type="redirect">
+  <button class="inner-box4" type="primary" plain>重定向跳转页面</button>
+</navigator>
 
-<!-- 组件跳转（返回） -->
-<navigator url="/pages/navigate/navigate" open-type="navigateBack">返回页面</navigator>
+<!-- 组件跳转（tabBar） 跳转tabbar页面，并关闭其他所有非tabbar页面-->
+<navigator url="/pages/my/my" hover-class="none" open-type="switchTab">
+  <button class="inner-box4" type="primary" plain>只能跳转tabbar页面</button>
+</navigator>
 
-<!-- 组件跳转（关闭） -->
-<navigator url="/pages/navigate/navigate" open-type="switchTab">关闭页面</navigator>
+<!-- 组件跳转（重新加载） 关闭所有页面，打开到应用内的某个页面-->
+<navigator url="/pages/navigate/navigate" hover-class="none" open-type="reLaunch">
+  <button class="inner-box4" type="primary" plain>关闭所有页面，打开到应用内的某个页面</button>
+</navigator>
 
-<!-- 组件跳转（重新加载） -->
-<navigator url="/pages/navigate/navigate" open-type="reLaunch">重新加载页面</navigator>
+<!-- 跳转携带参数-->
+<navigator url="/pages/navigate/navigate?id=123&name=张三" hover-class="none">
+  <button class="inner-box4" type="primary" plain>跳转携带参数</button>
+</navigator>
 
-<!-- 组件跳转（tabBar） -->
-<navigator url="/pages/navigate/navigate" open-type="switchTab">跳转tabBar页面</navigator>
+<view class="container4">
+  <text class="title4">=======页面跳转(编程式导航)=======</text>
+</view>
 
+<button bindtap='navigateTo' type='default'>navigateTo编程式导航跳转页面</button>
+
+<button bindtap='redirectTo' type='default'>redirectTo编程式导航跳转页面</button>
+
+<button bindtap='switchTab' type='default'>switchTab编程式导航跳转页面</button>
+
+<button bindtap='reLaunch' type='default'>reLaunch编程式导航跳转页面</button>
+
+<button bindtap='navigateBack' type='default'>navigateBack编程式导航返回页面</button>

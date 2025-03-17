@@ -1,2 +1,13 @@
 <!--pages/navigate/navigate.wxml-->
 <text>pages/navigate/navigate.wxml</text>
+<view class="container">
+    <text>
+        这里是跳转页面测试
+    </text>
+      
+</view>
+
+<navigator hover-class="none" open-type="navigateBack">
+    <button class="inner-box4" type="primary" plain>返回上一级</button>
+</navigator>
+  
