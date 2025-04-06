@@ -15,13 +15,16 @@
   margin: 10rpx;
   border-radius: 20rpx;
   background-color: #d7f497;
+  padding: 20rpx;
 }
 
 .item-image {
-  width: 200rpx;
-  height: 300rpx;
+  width: 240rpx;
+  height: 360rpx;
   margin-right: 20rpx;
-  padding: 5rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .name {
@@ -35,15 +38,10 @@
   font-size: 24rpx;
 }
 
-
 .grade {
   font-size: 28rpx;
   color: #ff6b6b;
   margin-bottom: 10rpx;
-}
-
-.grade-text {
-  color: #333;
 }
 
 .grade-value {
@@ -64,4 +62,47 @@
   color: #666;
 }
 
+.director {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.director-text {
+  color: #666;
+}
+
+.director-value {
+  color: #333;
+}
+
+.actors {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.actors-text {
+  color: #666;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.actors-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.actor-item {
+  margin-bottom: 5rpx;
+}
+
+.actor-name {
+  color: #333;
+  margin-right: 10rpx;
+}
+
+.actor-role {
+  color: #666;
+  font-size: 22rpx;
+}
 

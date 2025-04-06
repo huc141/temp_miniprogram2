@@ -3,10 +3,10 @@
 <button class="custom-button" bindtap="getFilmList" type="default" plain="{{true}}">获取电影列表</button>
 
 <view class="item" wx:for="{{film_list}}" wx:key="index">
-    <image class="item-image"  src="{{item.poster}}" mode="aspectFit"></image>
+    <image class="item-image" src="{{item.poster}}" mode="aspectFit"></image>
     
     <view>
-        <view calss="name">{{item.name}}</view>
+        <view class="name">{{item.name}}</view>
         
         <text class="grade">
             <text class="grade-text">观众评分：</text>
@@ -18,7 +18,19 @@
         </view>
 
         <view class="director">
+            <text class="director-text">导演：</text>
+            <text class="director-value">{{item.director}}</text>
+        </view>
+
+        <view class="actors">
+            <text class="actors-text">主演：</text>
+            <view class="actors-list">
+                <view class="actor-item" wx:for="{{item.actors}}" wx:key="name">
+                    <text class="actor-name">{{item.name}}</text>
+                    <text class="actor-role">({{item.role}})</text>
+                </view>
+            </view>
+        </view>
     </view>
-       
 </view>
   
