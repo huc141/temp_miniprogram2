@@ -20,4 +20,100 @@
   text-align: center;
 }
 
+.container2 {
+  margin-top: 120rpx; /* 整体容器与屏幕顶部的距离 */
+  display: flex;
+  flex-direction: column; /* 垂直排列子元素 */
+  align-items: center; /* 水平居中 */
+}
 
+.container2 text {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.button-spacing {
+  height: 30rpx;
+  width: 100%;
+}
+
+/* 添加button样式 */
+button {
+  /* 宽度占满整行 */
+  width: fit-content; 
+  /* 添加上下外边距，使各个navigator之间有间隔 */
+  margin: 20rpx 0; 
+  /* 文本居中 */
+  text-align: center; 
+}
+
+.custom_button {
+  /* 自适应内容宽度，但有最大值限制 */
+  width: auto;
+  /* 设置内部间距，让按钮有足够空间显示文字 */
+  padding: 0 40rpx;
+  /* 固定高度 */
+  height: 80rpx;
+  /* 设置最大宽度，防止超出屏幕 */
+  max-width: 90vw;
+  /* 内容垂直居中 */
+  line-height: 80rpx;
+  /* 确保文本不换行 */
+  white-space: nowrap;
+  /* 不再设置为可见溢出，而是包含全部内容 */
+  overflow: hidden;
+  /* 背景色 */
+  background-color: hsl(130, 75%, 88%);
+  box-shadow: 0 6rpx 12rpx rgba(0, 0, 0, 0.15); /* 增强阴影效果 */
+  border-radius: 10rpx;
+  /* 确保文字大小合适 */
+  font-size: 28rpx;
+  /* 底部边距，防止被遮挡 */
+  margin-bottom: 40rpx;
+  /* 确保内容完整显示，按钮会扩展到内容所需尺寸 */
+  box-sizing: content-box;
+  /* 确保文字正确居中显示 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 添加过渡效果 */
+  transition: all 0.2s ease;
+}
+
+/* 按钮按下时的效果 */
+.custom_button.button-hover {
+  /* 背景色变深 */
+  background-color: hsl(130, 75%, 75%);
+  /* 轻微缩小效果 */
+  transform: scale(0.97);
+  /* 阴影减弱 */
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 添加数据区块的样式 */
+.data-block {
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin: 30rpx 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.data-block view view {
+  padding: 8rpx 0;
+  font-size: 28rpx;
+  color: #333;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+/* 按钮容器样式 */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  /* 考虑底部安全区域 */
+  padding-bottom: calc(20rpx + env(safe-area-inset-bottom));
+}

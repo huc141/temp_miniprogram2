@@ -57,14 +57,14 @@
   <text class="title4">=======页面跳转(编程式导航)=======</text>
 </view>
 
-<button bindtap='navigateTo' type='default'>navigateTo编程式导航跳转页面</button>
+<button bindtap='navigateToNewPage' type='default'>navigateTo编程式导航跳转页面</button>
 
-<button bindtap='redirectTo' type='default'>redirectTo编程式导航跳转页面</button>
+<button bindtap='redirectToNewPage' type='default'>redirectTo编程式导航跳转页面</button>
 
-<button bindtap='switchTab' type='default'>switchTab编程式导航跳转页面</button>
+<button bindtap='switchTabNewPage' type='default'>switchTab编程式导航跳转页面</button>
 
-<button bindtap='reLaunch' type='default'>reLaunch编程式导航跳转页面</button>
+<button bindtap='reLaunchNewPage' type='default'>reLaunch编程式导航跳转页面</button>
 
-<button bindtap='navigateBack' type='default'>navigateBack编程式导航返回页面</button>
+<button bindtap='navigateBackPage' type='default'>navigateBack编程式导航返回页面</button>
 
 <!-- 尝试推送代码>

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/history/history",
     "pages/my/my",
-    "pages/navigate/navigate"
+    "pages/navigate/navigate",
+    "pages/template_grammar/template_grammar"
   ],
 
   "window": {

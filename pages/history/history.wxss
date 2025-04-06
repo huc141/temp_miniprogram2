@@ -180,3 +180,8 @@ navigator {
   text-align: center; /* 文本居中 */
 }
 
+button {
+  width: 100%;
+  margin: 20rpx 0;
+  text-align: center;
+}

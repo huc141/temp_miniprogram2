@@ -1,2 +1,24 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+
+<button class="custom-button" bindtap="getFilmList" type="default" plain="{{true}}">获取电影列表</button>
+
+<view class="item" wx:for="{{film_list}}" wx:key="index">
+    <image class="item-image"  src="{{item.poster}}" mode="aspectFit"></image>
+    
+    <view>
+        <view calss="name">{{item.name}}</view>
+        
+        <text class="grade">
+            <text class="grade-text">观众评分：</text>
+            <text class="grade-value">{{item.grade}}</text>
+        </text>
+
+        <view class="nation">
+            <text class="nation-text">{{item.nation}}</text> | <text class="runtime">{{item.runtime}} 分钟</text>
+        </view>
+
+        <view class="director">
+    </view>
+       
+</view>
+  

@@ -1,13 +1,63 @@
 <!--pages/navigate/navigate.wxml-->
 <text>pages/navigate/navigate.wxml</text>
 <view class="container">
-    <text>
+    <text class="title">
         这里是跳转页面测试
     </text>
-      
 </view>
 
 <navigator hover-class="none" open-type="navigateBack">
     <button class="inner-box4" type="primary" plain>返回上一级</button>
 </navigator>
+
+<!-- <view class="button-spacing"></view> -->
+
+<button class="inner-box2"  bindtap='navigateBackPage' type='default'>navigateBack编程式导航返回页面</button>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>名字是：{{name}}</view>
+        <view>年龄是：{{age}}</view>
+        <view>性别是：{{gender}}</view>
+        <view>爱好是：{{hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>用户信息：{{userinfo.name}}</view>
+        <view>用户信息：{{userinfo.age}}</view>
+        <view>用户信息：{{userinfo.gender}}</view>
+        <view>用户信息：{{userinfo.hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>列表信息：{{list[0].name}}</view>
+        <view>列表信息：{{list[0].age}}</view>
+        <view>列表信息：{{list[0].gender}}</view>
+        <view>列表信息：{{list[0].hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>算数运算99+1：{{99+1}}</view>
+        <view>三元运算：{{num>100?'大于100':'小于100'}}</view>
+        <view>三元运算：{{num>9}}</view>
+    </view>
+</view>
+
+<view class="button-wrapper">
+    <button class="custom_button" bindtap='navigateToTemplateGrammar' hover-class="button-hover" hover-stay-time="100">
+        <text>点击进一步学习模板语法</text>
+    </button>
+</view>
   

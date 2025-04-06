@@ -1,0 +1,98 @@
+/* pages/template_grammar/template_grammar.wxss */
+.container2 {
+    margin-top: 120rpx; /* 整体容器与屏幕顶部的距离 */
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中 */
+  }
+  
+  .container2 text {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .button-spacing {
+    height: 30rpx;
+    width: 100%;
+  }
+  
+  /* 添加button样式 */
+  button {
+    width: 100%; /* 宽度占满整行 */
+    margin: 20rpx 0; /* 添加上下外边距，使各个navigator之间有间隔 */
+    text-align: center; /* 文本居中 */
+  }
+  
+  /* 添加数据区块的样式 */
+  .data-block {
+    background-color: #ffffff;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    margin: 30rpx 20rpx;
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-block view view {
+    padding: 8rpx 0;
+    font-size: 28rpx;
+    color: #333;
+    border-bottom: 1rpx solid #f0f0f0;
+  }
+
+  /* 商品列表文字样式 */
+  .data-block text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80rpx;
+    font-size: 28rpx;
+    color: #333;
+  }
+
+  /* 自定义输入框样式 */
+  .score-input {
+    width: 90%;
+    height: 80rpx;
+    margin: 20rpx auto;
+    padding: 0 20rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid #3a8ee6;
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+    font-size: 32rpx;
+    color: #333;
+  }
+
+  /* 条件渲染结果样式 */
+  .score-result {
+    width: 90%;
+    height: 80rpx;
+    margin: 20rpx auto;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .score-default {
+    background-color: #909399;
+  }
+
+  .score-excellent {
+    background-color: #67c23a;
+  }
+
+  .score-good {
+    background-color: #409eff;
+  }
+
+  .score-pass {
+    background-color: #e6a23c;
+  }
+
+  .score-fail {
+    background-color: #f56c6c;
+  }

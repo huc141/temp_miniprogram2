@@ -1,0 +1,134 @@
+<!--pages/template_grammar/template_grammar.wxml-->
+<view class="container2">
+    <text class="title2">
+        =======模板语法=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>名字是：{{name}}</view>
+        <view>年龄是：{{age}}</view>
+        <view>性别是：{{gender}}</view>
+        <view>爱好是：{{hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>用户信息：{{userinfo.name}}</view>
+        <view>用户信息：{{userinfo.age}}</view>
+        <view>用户信息：{{userinfo.gender}}</view>
+        <view>用户信息：{{userinfo.hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>列表信息：{{list[0].name}}</view>
+        <view>列表信息：{{list[0].age}}</view>
+        <view>列表信息：{{list[0].gender}}</view>
+        <view>列表信息：{{list[0].hobby}}</view>
+    </view>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>算数运算99+1：{{99+1}}</view>
+        <view>三元运算：{{num>100?'大于100':'小于100'}}</view>
+        <view>三元运算：{{num>9}}</view>
+    </view>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之响应式=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>名字是：{{name}}</view>
+        <view>年龄是：{{age}}</view>
+    </view>
+    <button bindtap="changeName">改变名字</button>
+    <button bindtap="changeAge">年龄+1</button>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之修改单个对象=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>对象的姓名信息：{{userinfo.name}}</view>
+        <view>对象的爱好信息：{{userinfo.hobby}}</view>
+        <button bindtap="changeHobby">改变爱好</button>
+    </view>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之修改数组=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>列表信息：{{list[0].name}}</view>
+        <view>列表信息：{{list[0].age}}</view>
+        <view>列表信息：{{list[0].gender}}</view>
+        <view>列表信息：{{list[0].hobby}}</view>
+        <button bindtap="changeList">改变列表</button>
+    </view>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之解构赋值=======
+    </text>
+</view>
+
+<view class="data-block">
+    <view>
+        <view>解构赋值：{{name}}</view>
+        <view>解构赋值：{{age}}</view>
+        <view>解构赋值：{{gender}}</view>
+        <view>解构赋值：{{hobby}}</view>
+        <button bindtap="changeName2">解构赋值</button>
+    </view>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之列表渲染=======
+    </text>
+</view>
+
+<view class="data-block" wx:for="{{goodList}}" wx:for-item="item" wx:key="id">
+    <text>
+        {{index}}-商品id：---{{item.id}}---商品名称：{{item.name}}---商品价格：{{item.price}}
+    </text>
+</view>
+
+<view class="container2">
+    <text class="title2">
+        =======模板语法之条件渲染=======
+    </text>
+</view>
+
+<view class="data-block">
+    <input type="number" model:value="{{score}}" class="score-input" placeholder="请输入分数（0-100）" min="0" max="100" bindinput="checkScore"/>
+
+    <view wx:if="{{score === '' || score === undefined || score === null}}" class="score-result score-default">请输入分数</view>
+    <view wx:elif="{{score>=90}}" class="score-result score-excellent">优秀</view>
+    <view wx:elif="{{score>=80}}" class="score-result score-good">良好</view>
+    <view wx:elif="{{score>=60}}" class="score-result score-pass">及格</view>
+    <view wx:else class="score-result score-fail">不及格</view>
+</view>
+
+
+
+
