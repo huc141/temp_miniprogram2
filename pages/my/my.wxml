@@ -5,7 +5,7 @@
 <view class="item" wx:for="{{film_list}}" wx:key="index">
     <image class="item-image" src="{{item.poster}}" mode="aspectFit"></image>
     
-    <view>
+    <view class="item-content">
         <view class="name">{{item.name}}</view>
         
         <text class="grade">
@@ -30,6 +30,27 @@
                     <text class="actor-role">({{item.role}})</text>
                 </view>
             </view>
+        </view>
+    </view>
+    <view class="btn-wrapper">
+        <button class="buy-ticket-btn" size="mini" bindtap="showBuyTicketModal" data-index="{{index}}">购票</button>
+    </view>
+    <view class="like-btn-wrapper">
+        <button class="like-btn {{item.isLiked ? 'liked' : ''}}" size="mini" bindtap="toggleLike" data-index="{{index}}">
+            ♥
+        </button>
+    </view>
+</view>
+
+<!-- 购票确认模态框 -->
+<view class="modal" wx:if="{{showModal}}">
+    <view class="modal-mask"></view>
+    <view class="modal-content">
+        <view class="modal-title">您确定购票吗？</view>
+        <view class="modal-body">点击确定将会前往第三方网址购票</view>
+        <view class="modal-footer">
+            <button class="modal-btn cancel" bindtap="hideModal">取消</button>
+            <button class="modal-btn confirm" bindtap="confirmBuyTicket">确定</button>
         </view>
     </view>
 </view>
