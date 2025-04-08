@@ -22,8 +22,8 @@
 
 <view class='menu'>
   <view class="menu-item">
-    <image src="/images/menu/bijiben.png" class="menu-icon"/>
-    <text title='title'>笔记本</text>
+    <image src="/images/menu/bijiben.png" class="menu-icon" bindtap="navigateToLocalStorage" hover-class="none" open-type="navigate" />
+    <text title='title'>本地存储</text>
   </view>
   
   <view class="menu-item">

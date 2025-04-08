@@ -16,10 +16,11 @@ Page({
                         success: (res) => {
                                 console.log(res.data.data.films)
                                 if (res.data.status === 0){
-                                        // 为每个电影添加点赞状态
+                                        // 为每个电影添加点赞和收藏状态
                                         const films = res.data.data.films;
                                         films.forEach(film => {
                                                 film.isLiked = false;
+                                                film.isCollected = false;
                                         });
                                         this.setData({
                                                 film_list: films
@@ -34,6 +35,24 @@ Page({
          */
         onLoad(options) {
                 this.getFilmList();
+        },
+
+        toggleCollect: function(e) {
+                const index = e.currentTarget.dataset.index;
+                const newList = this.data.film_list;
+                // 直接修改对应电影的收藏状态
+                newList[index].isCollected = !newList[index].isCollected;
+                
+                this.setData({
+                        film_list: newList
+                });
+
+                // 显示收藏状态
+                wx.showToast({
+                        title: newList[index].isCollected ? '收藏成功' : '取消收藏',
+                        icon: 'success',
+                        duration: 1000
+                });
         },
 
         toggleLike: function(e) {

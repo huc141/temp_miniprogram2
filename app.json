@@ -4,7 +4,8 @@
     "pages/history/history",
     "pages/my/my",
     "pages/navigate/navigate",
-    "pages/template_grammar/template_grammar"
+    "pages/template_grammar/template_grammar",
+    "pages/local_storage/local_storage"
   ],
 
   "window": {

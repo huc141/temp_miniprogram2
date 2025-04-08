@@ -35,6 +35,13 @@
     <view class="btn-wrapper">
         <button class="buy-ticket-btn" size="mini" bindtap="showBuyTicketModal" data-index="{{index}}">购票</button>
     </view>
+
+    <view class="collect-btn-wrapper">
+        <button class="collect-btn {{item.isCollected ? 'collected' : ''}}" size="mini" bindtap="toggleCollect" data-index="{{index}}">
+            ★
+        </button>
+    </view>
+    
     <view class="like-btn-wrapper">
         <button class="like-btn {{item.isLiked ? 'liked' : ''}}" size="mini" bindtap="toggleLike" data-index="{{index}}">
             ♥

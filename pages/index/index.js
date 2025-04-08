@@ -1,2 +1,8 @@
 // index.js
-Page({})
+Page({
+  navigateToLocalStorage() {
+    wx.navigateTo({
+      url: '/pages/local_storage/local_storage'
+    })
+  }
+})

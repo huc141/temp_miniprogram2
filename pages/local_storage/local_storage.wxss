@@ -1,0 +1,50 @@
+/* pages/local_storage/local_storage.wxss */
+
+.back-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60rpx;
+  margin-bottom: 20rpx;
+}
+
+.storage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20rpx;
+}
+
+.storage-input {
+  width: 90%;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.storage-button, .get-button {
+  width: 90%;
+  margin-bottom: 20rpx;
+}
+
+.get-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.data-display {
+  width: 90%;
+  min-height: 80rpx;
+  padding: 20rpx;
+  border: 1px solid #eee;
+  border-radius: 8rpx;
+  background-color: #f9f9f9;
+  margin-top: 20rpx;
+}
+
+

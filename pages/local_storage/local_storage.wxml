@@ -1,0 +1,43 @@
+<!--pages/local_storage/local_storage.wxml-->
+<text>本地存储演示</text>
+
+<view class="back-button" bindtap="navigateBack">
+  <button class="back-button" type="primary" plain>返回</button>
+</view>
+
+<!-- 同步保存 -->
+<!-- 存储数据 -->
+<view class="storage-container">
+  <input class="storage-input" placeholder="请输入内容" bindinput="inputChange" value="{{inputValue}}" />
+  <button class="storage-button" type="primary" bindtap="storageData">存储数据</button>
+</view>
+
+<!-- 获取数据 -->
+<view class="get-container">
+  <button class="get-button" type="primary" bindtap="getData">获取数据</button>
+  <view class="data-display" wx:if="{{storedData}}">
+    <text>存储的数据: {{storedData}}</text>
+  </view>
+</view>
+
+<!-- 删除数据 -->
+
+
+<!-- 清空数据 -->
+
+
+<!-- 异步保存 -->
+
+
+<!-- 获取数据 -->
+
+
+<!-- 删除数据 -->
+
+
+<!-- 清空数据 -->   
+
+
+
+
+
