@@ -1,5 +1,9 @@
 <!--pages/local_storage/local_storage.wxml-->
-<text>本地存储演示</text>
+
+<view class="title">
+  <text>本地存储演示</text>
+</view>
+  
 
 <view class="back-button" bindtap="navigateBack">
   <button class="back-button" type="primary" plain>返回</button>
