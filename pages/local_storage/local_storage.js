@@ -24,7 +24,7 @@ Page({
                 // 获取输入框的值，并赋值给data
                 const data = this.data.inputValue;
                 // 如果输入框的值为空，则弹出提示
-                if (!data || data.trim() === '') {
+                if (!data || data.trim() === '') {// 检查数据是否为空或全是空白字符。trim() 是字符串方法，移除字符串开头和结尾的所有空白字符.
                         wx.showToast({
                                 title: '请输入内容',
                                 icon: 'none',
@@ -33,7 +33,7 @@ Page({
                         return;
                 }
                 // 将输入框的值存储到本地存储中
-                wx.setStorageSync('data', data);
+                wx.setStorageSync('data', data);// 将输入框的值存储到本地存储中，第一个参数 'data' - 存储键名(key)，相当于数据的标识符,第二个参数 data - 存储的值(value)，即从输入框获取的用户输入内容
                 wx.showToast({
                         title: '数据存储成功',
                         icon: 'success',
@@ -42,18 +42,18 @@ Page({
         },
 
         getData() {
-                const data = wx.getStorageSync('data');
-                if (data) {
+                const data = wx.getStorageSync('data'); // 从本地存储中获取数据，第一个参数 'data' - 存储键名(key)，相当于数据的标识符,第二个参数 data - 存储的值(value)，即从输入框获取的用户输入内容
+                if (data) {  // 如果data存在，则将data的值赋值给storedData
                         this.setData({
                                 storedData: data
                         });
-                        wx.showToast({
+                        wx.showToast({ // 显示提示框，提示数据获取成功
                                 title: '数据获取成功',
                                 icon: 'success',
                                 duration: 2000
                         });
                 } else {
-                        wx.showToast({
+                        wx.showToast({ // 显示提示框，提示数据获取失败
                                 title: '未找到数据',
                                 icon: 'none',
                                 duration: 2000
