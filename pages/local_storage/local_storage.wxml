@@ -12,34 +12,53 @@
 <!-- 同步保存 -->
 <!-- 存储数据 -->
 <view class="storage-container">
-  <input class="storage-input" placeholder="请输入内容" bindinput="inputChange" value="{{inputValue}}" />
-  <button class="storage-button" type="primary" bindtap="storageData">存储数据</button>
+  <input class="storage-input" placeholder="同步存储，请输入内容" bindinput="syncInputChange" value="{{syncInputValue}}" />
+  <button class="storage-button" type="primary" bindtap="storageData">同步存储数据</button>
 </view>
 
 <!-- 获取数据 -->
 <view class="get-container">
   <button class="get-button" type="primary" bindtap="getData">获取数据</button>
-  <view class="data-display" wx:if="{{storedData}}">
-    <text>存储的数据: {{storedData}}</text>
+  <view class="data-display" wx:if="{{syncstoredData}}">
+    <text>存储的数据: {{syncstoredData}}</text>
   </view>
 </view>
 
 <!-- 删除数据 -->
-
+<view class="delete-container">
+  <button class="delete-button" type="primary" bindtap="deleteData">删除数据</button>
+</view>
 
 <!-- 清空数据 -->
+<view class="clear-container">
+  <button class="clear-button" type="primary" bindtap="clearData">清空数据</button>
+</view>
 
 
 <!-- 异步保存 -->
-
+<view class="async-storage-container">
+  <input class="async-storage-input" placeholder="异步存储，请输入内容" bindinput="asyncInputChange" value="{{asyncInputValue}}" />
+  <button class="async-storage-button" type="primary" bindtap="asyncStorageData">异步存储数据</button>
+</view>
 
 <!-- 获取数据 -->
-
+<view class="get-container">
+  <button class="get-button" type="primary" bindtap="asyncGetData">获取数据</button>
+  <view class="data-display" wx:if="{{asyncstoredData}}">
+    <text>存储的数据: {{asyncstoredData}}</text>
+  </view>
+</view>
 
 <!-- 删除数据 -->
+<view class="delete-container">
+  <button class="delete-button" type="primary" bindtap="deleteData">删除数据</button>
+</view>
 
 
 <!-- 清空数据 -->   
+<view class="clear-container">
+  <button class="clear-button" type="primary" bindtap="clearData">清空数据</button>
+</view>
 
 
 

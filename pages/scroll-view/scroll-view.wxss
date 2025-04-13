@@ -1,0 +1,375 @@
+/* pages/scroll-view/scroll-view.wxss */
+.scroll-view {
+    /* 高度为屏幕高度 */
+    height: 100vh;
+
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120rpx;
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20rpx;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.good-list {
+    height: 300rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 奇数背景色是红色，偶数背景色是蓝色 */
+.good-list:nth-child(odd) {
+    background-color: rgb(237, 132, 132);
+}
+
+.good-list:nth-child(even) {
+    background-color: rgb(190, 190, 245);
+}
+
+/* 电影列表容器 */
+.film-list-container {
+    padding: 20rpx;
+}
+
+/* 电影计数 */
+.film-count {
+    text-align: center;
+    font-size: 28rpx;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 20rpx;
+    margin: 20rpx;
+    border-radius: 10rpx;
+    font-weight: bold;
+}
+
+/* 加载状态提示 */
+.loading-container {
+    padding: 30rpx 0;
+    text-align: center;
+}
+
+.loading-tips {
+    font-size: 28rpx;
+    color: #666;
+    margin: 20rpx 0;
+}
+
+/* 无数据提示 */
+.no-data-tips {
+    text-align: center;
+    font-size: 28rpx;
+    color: #999;
+    padding: 50rpx 0;
+}
+
+/* 分割线，每个电影项目下方 */
+.item {
+    position: relative;
+    margin: 20rpx;
+    padding: 20rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+/* pages/my/my.wxss */
+
+.custom-button {
+    margin-top: 120rpx; /* 整体容器与屏幕顶部的距离 */
+    display: flex;
+    flex-direction: column; /* 垂直排列子元素 */
+    align-items: center; /* 水平居中 */
+    padding: 10rpx;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10rpx;
+    border-radius: 20rpx;
+    background-color: #d7f497;
+    padding: 20rpx;
+    position: relative;
+  }
+  
+  .item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 140rpx; /* 为按钮留出空间 */
+  }
+  
+  .item-image {
+    width: 240rpx;
+    height: 360rpx;
+    margin-right: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .name {
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+  }
+  
+  .grade-text {
+    color: #333;
+    font-size: 24rpx;
+  }
+  
+  .grade {
+    font-size: 28rpx;
+    color: #ff6b6b;
+    margin-bottom: 10rpx;
+  }
+  
+  .grade-value {
+    color: #ff6b6b;
+    font-weight: bold;
+  }
+  
+  .nation {
+    font-size: 24rpx;
+    color: #666;
+  }
+  
+  .nation-text {
+    color: #666;
+  }
+  
+  .runtime {
+    color: #666;
+  }
+  
+  .director {
+    font-size: 24rpx;
+    color: #666;
+    margin-bottom: 10rpx;
+  }
+  
+  .director-text {
+    color: #666;
+  }
+  
+  .director-value {
+    color: #333;
+  }
+  
+  .actors {
+    font-size: 24rpx;
+    color: #666;
+    margin-bottom: 20rpx;
+  }
+  
+  .actors-text {
+    color: #666;
+    margin-bottom: 10rpx;
+    display: block;
+  }
+  
+  .actors-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .actor-item {
+    margin-bottom: 5rpx;
+  }
+  
+  .actor-name {
+    color: #333;
+    margin-right: 10rpx;
+  }
+  
+  .actor-role {
+    color: #666;
+    font-size: 22rpx;
+  }
+  
+  /* 购票按钮容器 */
+  .btn-wrapper {
+    position: absolute;
+    right: 20rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 购票按钮样式 */
+  .buy-ticket-btn {
+    min-width: 80rpx !important;
+    width: fit-content !important;
+    height: 48rpx !important;
+    line-height: 48rpx !important;
+    font-size: 24rpx !important;
+    padding: 0 16rpx !important;
+    background-color: #ff6b6b !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 24rpx !important;
+    margin: 0 !important;
+  }
+  
+  /* 模态框样式 */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+  .modal-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    overflow: hidden;
+  }
+  
+  .modal-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    padding: 30rpx;
+    border-bottom: 1rpx solid #eee;
+  }
+  
+  .modal-body {
+    font-size: 28rpx;
+    color: #666;
+    text-align: center;
+    padding: 40rpx 30rpx;
+  }
+  
+  .modal-footer {
+    display: flex;
+    border-top: 1rpx solid #eee;
+  }
+  
+  .modal-btn {
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    font-size: 28rpx;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+  }
+  
+  .modal-btn.cancel {
+    color: #666;
+    border-right: 1rpx solid #eee;
+  }
+  
+  .modal-btn.confirm {
+    color: #ff6b6b;
+  }
+  
+  /* 点赞按钮容器 */
+  .like-btn-wrapper {
+    position: absolute;
+    right: 20rpx;
+    bottom: 20rpx;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 点赞按钮样式 */
+  .like-btn {
+    min-width: 60rpx !important;
+    width: 60rpx !important;
+    height: 60rpx !important;
+    line-height: 60rpx !important;
+    padding: 0 !important;
+    font-size: 40rpx !important;
+    background-color: #fff !important;
+    color: #999 !important;
+    border: none !important;
+    border-radius: 30rpx !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  /* 已点赞状态 */
+  .like-btn.liked {
+    background-color: #ff6b6b !important;
+    color: #fff !important;
+    transform: scale(1.1) !important;
+  }
+  
+  /* 收藏按钮容器 */
+  .collect-btn-wrapper {
+    position: absolute;
+    right: 90rpx;
+    bottom: 20rpx;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 收藏按钮样式 */
+  .collect-btn {
+    min-width: 60rpx !important;
+    width: 60rpx !important;
+    height: 60rpx !important;
+    line-height: 60rpx !important;
+    padding: 0 !important;
+    font-size: 40rpx !important;
+    background-color: #fff !important;
+    color: #999 !important;
+    border: none !important;
+    border-radius: 30rpx !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  /* 已收藏状态 */
+  .collect-btn.collected {
+    background-color: #ffb700 !important;
+    color: #fff !important;
+    transform: scale(1.1) !important;
+  }
+  

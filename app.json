@@ -5,7 +5,10 @@
     "pages/my/my",
     "pages/navigate/navigate",
     "pages/template_grammar/template_grammar",
-    "pages/local_storage/local_storage"
+    "pages/local_storage/local_storage",
+    "pages/load_more/load_more",
+    "pages/scroll-view/scroll-view"
+
   ],
 
   "window": {

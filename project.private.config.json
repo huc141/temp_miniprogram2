@@ -9,6 +9,34 @@
                 "miniprogram": {
                         "list": [
                                 {
+                                        "name": "pages/index/index",
+                                        "pathName": "pages/index/index",
+                                        "query": "",
+                                        "scene": null,
+                                        "launchMode": "default"
+                                },
+                                {
+                                        "name": "pages/index/index",
+                                        "pathName": "pages/index/index",
+                                        "query": "",
+                                        "launchMode": "default",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "pages/index/index",
+                                        "pathName": "pages/index/index",
+                                        "query": "",
+                                        "launchMode": "default",
+                                        "scene": null
+                                },
+                                {
+                                        "name": "pages/index/index",
+                                        "pathName": "pages/index/index",
+                                        "query": "",
+                                        "launchMode": "default",
+                                        "scene": null
+                                },
+                                {
                                         "name": "pages/template_grammar/template_grammar",
                                         "pathName": "pages/template_grammar/template_grammar",
                                         "query": "from=navigateTo",

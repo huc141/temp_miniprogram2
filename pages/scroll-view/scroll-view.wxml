@@ -1,0 +1,82 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+
+<!-- 上拉加载 -->
+<scroll-view scroll-y class="scroll-view" lower-threshold="50" bindscrolltolower="onReachBottom"
+ refresher-enabled="true" bindrefresherrefresh="onPullDownRefresh"
+ refresher-default-style="black" refresher-background="white"
+ enable-back-to-top="{{true}}">
+ 
+    <view class="title-container">
+    <text class="title">scroll-view实现上拉下拉演示</text>
+</view>
+
+<view class="back-button" bindtap="navigateBack">
+    <button class="back-btn" type="primary" plain>返回上一页</button>
+</view>
+
+<view class="good-list" wx:for="{{good_list}}" wx:key="*this">
+    {{item}}
+</view>
+
+<!-- 电影数量显示 -->
+<view class="film-count" wx:if="{{film_list.length > 0}}">
+    已加载 {{film_list.length}} 部电影，继续上滑加载更多
+</view>
+
+<!-- 电影列表 -->
+<block wx:for="{{film_list}}" wx:key="index">
+    <view class="item">
+        <image class="item-image" src="{{item.poster}}" mode="aspectFit"></image>
+        
+        <view class="item-content">
+            <view class="name">{{item.name}}</view>
+            
+            <text class="grade">
+                <text class="grade-text">观众评分：</text>
+                <text class="grade-value">{{item.grade}}</text>
+            </text>
+
+            <view class="nation">
+                <text class="nation-text">{{item.nation}}</text> | <text class="runtime">{{item.runtime}} 分钟</text>
+            </view>
+
+            <view class="director">
+                <text class="director-text">导演：</text>
+                <text class="director-value">{{item.director}}</text>
+            </view>
+
+            <view class="actors">
+                <text class="actors-text">主演：</text>
+                <view class="actors-list">
+                    <view class="actor-item" wx:for="{{item.actors}}" wx:for-item="actor" wx:key="name">
+                        <text class="actor-name">{{actor.name}}</text>
+                        <text class="actor-role">({{actor.role}})</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="btn-wrapper">
+            <button class="buy-ticket-btn" size="mini" bindtap="showBuyTicketModal" data-index="{{index}}">购票</button>
+        </view>
+
+        <view class="collect-btn-wrapper">
+            <button class="collect-btn {{item.isCollected ? 'collected' : ''}}" size="mini" bindtap="toggleCollect" data-index="{{index}}">
+                ★
+            </button>
+        </view>
+        
+        <view class="like-btn-wrapper">
+            <button class="like-btn {{item.isLiked ? 'liked' : ''}}" size="mini" bindtap="toggleLike" data-index="{{index}}">
+                ♥
+            </button>
+        </view>
+    </view>
+</block>
+
+<!-- 无数据提示 -->
+<view class="no-data-tips" wx:if="{{film_list.length === 0}}">
+    暂无电影数据，请稍候...
+</view>
+
+</scroll-view>

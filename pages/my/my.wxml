@@ -32,6 +32,7 @@
             </view>
         </view>
     </view>
+    
     <view class="btn-wrapper">
         <button class="buy-ticket-btn" size="mini" bindtap="showBuyTicketModal" data-index="{{index}}">购票</button>
     </view>

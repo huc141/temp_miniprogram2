@@ -27,13 +27,13 @@
   </view>
   
   <view class="menu-item">
-    <image src="/images/menu/chugui.png" class="menu-icon"/>
-    <text title='title'>橱柜</text>
+    <image src="/images/menu/chugui.png" class="menu-icon" bindtap="navigateToLoadMore" hover-class="none" open-type="navigate" />
+    <text title='title'>上滑加载</text>
   </view>
 
   <view class="menu-item">
-    <image src="/images/menu/chuifengji.png" class="menu-icon"/>
-    <text title='title'>吹风机</text>
+    <image src="/images/menu/chuifengji.png" class="menu-icon" bindtap="navigateToScrollView" hover-class="none" open-type="navigate" />
+    <text title='title'>scroll-view</text>
   </view>
 
   <view class="menu-item">
