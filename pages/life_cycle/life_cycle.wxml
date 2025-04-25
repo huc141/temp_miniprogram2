@@ -1,0 +1,30 @@
+<!--pages/life_cycle/life_cycle.wxml-->
+<view class="title-container">
+    <text class="title">页面生命周期演示</text>
+</view>
+
+<view class="back-button" bindtap="navigateBack">
+    <button class="back-btn" type="primary" plain>返回上一页</button>
+</view>
+
+<view class="life-cycle-container">
+    <view class="life-cycle-item">
+        <text class="life-cycle-text">页面加载</text>
+    </view>
+
+    <view class="life-cycle-item">
+        <text class="life-cycle-text">页面初次渲染完成</text>
+    </view>
+
+    <view class="life-cycle-item">
+        <text class="life-cycle-text">页面显示</text>
+    </view>
+
+    <view class="life-cycle-item">
+        <text class="life-cycle-text">页面隐藏</text>
+    </view>
+
+    <view class="life-cycle-item">
+        <text class="life-cycle-text">页面卸载</text>
+    </view>
+</view>

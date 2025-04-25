@@ -1,0 +1,26 @@
+<!--pages/get_nickname/get_nickname.wxml-->
+<view class="title-container">
+    <text class="title">获取用户昵称演示</text>
+</view>
+
+<view class="nickname-container">
+    <view class="input-section">
+        <text class="label">自定义昵称：</text>
+        <input class="nickname-input" type="nickname" placeholder="请输入您的昵称" model:value="{{customNickname}}" />
+    </view>
+    
+    <view class="button-section">
+        <button class="wx-btn" type="primary" bindtap="getWechatNickname">使用微信昵称</button>
+        <button class="save-btn" type="primary" bindtap="saveNickname">保存昵称</button>
+    </view>
+    
+    <view class="result-section" wx:if="{{currentNickname}}">
+        <text class="result-label">当前昵称：</text>
+        <text class="result-nickname">{{currentNickname}}</text>
+    </view>
+</view>
+
+<view class="back-button" bindtap="navigateBack">
+    <button class="back-btn" type="primary" plain>返回上一页</button>
+</view>
+

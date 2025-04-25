@@ -1,0 +1,81 @@
+/* pages/get_avatar/get_avatar.wxss */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120rpx;
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20rpx;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+.back-btn {
+    width: 200rpx;
+    height: 80rpx;
+    font-size: 28rpx;
+}
+
+.avatar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50rpx;
+    background-color: transparent;
+    border: none;
+}
+
+.avatar-image {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-top: 20rpx;
+    border: 2rpx solid #ccc;
+}
+
+.tips-container {
+    margin-top: 40rpx;
+    padding: 0 40rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-message {
+    background-color: #fff2f0;
+    color: #f56c6c;
+    padding: 16rpx 30rpx;
+    border-radius: 8rpx;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+    width: 100%;
+    text-align: center;
+}
+
+.help-tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+    font-size: 28rpx;
+    margin-top: 20rpx;
+}
+
+.small-text {
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 10rpx;
+}
+

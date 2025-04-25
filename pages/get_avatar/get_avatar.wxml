@@ -1,0 +1,22 @@
+<!--pages/get_avatar/get_avatar.wxml-->
+<view class="title-container">
+    <text class="title">获取用户头像演示</text>
+</view>
+
+<view class="back-button" bindtap="navigateBack">
+    <button class="back-btn" type="primary" plain>返回上一页</button>
+</view>
+
+<button class="avatar-button" bind:chooseavatar="getAvatar" open-type="chooseAvatar">获取头像
+    <image class="avatar-image" src="{{avatarUrl}}" mode="aspectFit"></image>
+</button>
+
+<view class="tips-container">
+    <view class="error-message" wx:if="{{showError}}">
+        <text>{{errorMsg}}</text>
+    </view>
+    <view class="help-tips">
+        <text>点击上方按钮选择头像</text>
+        <text class="small-text">提示：在真机上测试效果更佳</text>
+    </view>
+</view>

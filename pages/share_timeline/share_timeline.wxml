@@ -1,0 +1,8 @@
+<!--pages/share_timeline/share_timeline.wxml-->
+<view class="title-container">
+    <text class="title">分享朋友圈演示</text>
+</view>
+
+<view class="back-button" bindtap="navigateBack">
+    <button class="back-btn" type="primary" plain>返回上一页</button>
+</view>

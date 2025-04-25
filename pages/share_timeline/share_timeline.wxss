@@ -1,0 +1,22 @@
+/* pages/share_timeline/share_timeline.wxss */
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120rpx;
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20rpx;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20rpx;
+    margin-bottom: 20rpx;
+}
